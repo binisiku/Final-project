@@ -1,0 +1,179 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8; /* Light background */
+    color: #333; /* Dark text color */
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h1, h2, h3 {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+/* Header Styles */
+header {
+    background-color: #000; /* Black header */
+    padding: 20px 0;
+    color: white;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #d32f2f; /* Red color on hover */
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(45deg, #d32f2f, #000); /* Gradient background */
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.hero .cta {
+    margin-top: 30px;
+}
+
+.hero .btn {
+    background-color: #000; /* Black button */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.hero .btn:hover {
+    background-color: #d32f2f; /* Red button on hover */
+}
+
+/* Featured Section */
+.featured {
+    padding: 50px 0;
+    text-align: center;
+    background: #f5f5f5; /* Light gray background */
+}
+
+.dishes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.dish {
+    margin: 20px;
+}
+
+.dish img {
+    width: 100%;
+    height: auto;
+    max-width: 250px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.dish img:hover {
+    transform: scale(1.1); /* Zoom effect on hover */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333; /* Dark footer */
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Slideshow Styles */
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    margin: 30px auto;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.mySlides {
+    display: none;
+}
+
+.slideshow-image {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Slideshow Fade Animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .dishes {
+        flex-direction: column;
+    }
+
+    .dish {
+        margin-bottom: 20px;
+    }
+
+    .hero {
+        padding: 30px 0;
+    }
+
+    .hero .btn {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+}
+
+/* Dark Mode Styles */
+.dark-mode {
+    background-color: #333; /* Dark background */
+    color: white;
+}
+
+.dark-mode header, .dark-mode footer {
+    background-color: #222; /* Darker background */
+}
